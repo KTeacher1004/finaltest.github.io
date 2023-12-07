@@ -1,0 +1,64 @@
+/* Create a container for header navigation bar*/
+.headercontainer {
+    background-color:white;
+    border: 2px solid black;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    height: 135px;
+    background-color: #A0E9FF;
+}
+
+/* Display each link inside the navigation bar */
+.headerbox{
+    flex: auto;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.headerboxText {
+    flex: auto;
+    flex-grow: 2;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.headerboxPicture {
+    flex: auto;
+    text-align: center;
+}
+
+.profile {
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    border-radius: 50%; /* Make it a circle */
+    text-align: center; /* Center text within the circle */
+    line-height: 50px; /* Vertically center text */
+    margin-top: 10px;
+}
+
+
+/* Bookstore logo inside the navigation bar*/
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+/* Clear the text decoration of each link */
+a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+/* Add color when point on the link */
+a:hover {
+    text-decoration: none;
+    color: #7c7c7c; 
+}
+
+#slide {
+    height: 500px;
+}
