@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/detail.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Description</title>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="history.back()" class="back-btn">
+            <div class="back">
+                <i class='bx bx-left-arrow-alt'></i>
+                <span>Back</span>
+            </div>
+        </button>
+        <div class="info">
+            <div class="info-left">
+                <div class="main">
+                    <img id="main-img" src="./assets/images/Detective/Sher1/main.png" alt="Sherlock Holmes 1">
+                    <div class="control-btn prev"><i class='bx bx-chevron-left'></i></div>
+                    <div class="control-btn next"><i class='bx bx-chevron-right'></i></div>
+                </div>
+
+                <div class="list-img">
+                    <div><img class="item-img" src="./assets/images/Detective/Sher1/main.png" alt="main">
+                    </div>
+                    <div><img class="item-img" src="./assets/images/Detective/Sher1/side image 1.png" alt="side img1">
+                    </div>
+                    <div><img class="item-img" src="./assets/images/Detective/Sher1/side image 2.png" alt="side img2">
+                    </div>
+                    <div><img class="item-img" src="./assets/images/Detective/Sher1/side image 3.png" alt="side img3">
+                    </div>
+                </div>
+            </div>
+            <div class="info-right">
+                <span id="name">Sher1</span>
+                <p id="desc">This is the first edition of Sherlock Holmes series which are written by Sir Conan Doyle. Thrilled, Detective, Interesting novel with lot of plot-twist and creative, extraordinary ways of solving crime</p>
+                <span id="price">100,000</span>
+                <div class="quantity">
+                    <span>Số lượng</span>
+                    <button id="minus-btn">-</button>
+                    <input type="text" id="number" value="1">
+                    <button id="add-btn">+</button>
+                </div>
+                <button id="buy-btn">Mua ngay</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/detail.js"></script>
+</body>
+
+</html>
