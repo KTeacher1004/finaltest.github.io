@@ -19,17 +19,17 @@ submitBtn.addEventListener('click', (e) => {
     }
     //check password and verifier have same values
     else if(password.value !== passwordVerify.value) {
-        incorrect.innerHTML = 'Incorrect password'
+        incorrect.innerHTML = 'Mật khẩu cần phải giống nhau'
     }
     //check condition
     else if(!regexLowercase.test(password.value)) {
-        incorrect.innerHTML = 'Password must contain lowercase characters'
+        incorrect.innerHTML = 'Cần một chữ in thường'
     }
     else if(!regexUppercase.test(password.value)) {
-        incorrect.innerHTML = 'Password must contain uppercase characters'
+        incorrect.innerHTML = 'Cần một chữ in hoa'
     }
     else if(!regexSpecial.test(password.value)) {
-        incorrect.innerHTML = 'Password must contain special character'
+        incorrect.innerHTML = 'Mật khẩu phải có ký tự đặc biệt'
     }
     else {
         incorrect.innerHTML = ''
