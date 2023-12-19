@@ -19,9 +19,9 @@ submitBtn.addEventListener('click', (e) => {
             }
             else {
                 passwordText.innerHTML = ''
+                window.location.href = 'http://127.0.0.1:5500/index.html'
                 break;
             }
         }
-        console.log(data.user)
     })
 })
