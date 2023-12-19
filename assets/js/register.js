@@ -33,7 +33,7 @@ submitBtn.addEventListener('click', (e) => {
     }
     else {
         incorrect.innerHTML = ''
-        window.location.href = 'http://127.0.0.1:5500/index.html'
+        window.location.href = '/index.html'
     }
     console.log(password.value, passwordVerify.value)
     console.log(regexLowercase.test(password.value), regexUppercase.test(passwordVerify.value))
