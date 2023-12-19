@@ -2,19 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    padding: 0 10%;
+.container-fluid{
+    background-color: #89CFF3;
+    padding: 10px 0;
+}
+.header {
+    display: flex;
+    align-items: center;
 }
 
-/* back button */
+/* Display each link inside the navigation bar */
+.logo{
+    flex: 1;
+    border-radius: 10px;
+}
+.search-bar{
+    flex: 2;
+    text-align: center;
+    position: relative;
+}
+.search-input{
+    width: 100%;
+    padding: 5px 30px 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+.bx-search-alt{
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+.userAvt {
+    flex: 1;
+    text-align: right;
+}
+
+.profile {
+    width: 80px; /* Set desired width */
+    height: 80px; /* Set desired height */
+    border-radius: 50%; /* Make it a circle */
+}
+
+/* Bookstore logo inside the navigation bar*/
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+/* Clear the text decoration of each link */
+a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+/* Add color when point on the link */
+a:hover {
+    text-decoration: none;
+    color: #7c7c7c; 
+}
 .bx-left-arrow-alt{
     font-size: 15px;
 }
 .back-btn{
     padding: 2px;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #BA4648;
     margin: 10px 0;
     border: none;
@@ -35,6 +92,7 @@
     width: 100%;
     height: 80%;
     margin-bottom: 5px;
+    border-radius: 5px;
 }
 
 .list-img {
@@ -52,6 +110,7 @@
     height: 100%;
     width: 100%;
     padding: 3px;
+    border-radius: 10px;
 }
 .active{
     background-color: orangered;
@@ -86,26 +145,32 @@
 }
 #name {
     font-size: 1.75em;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #desc {
     font-size: 1.1em;
     font-weight: 500;
 }
-#price{
-    display: block;
+.book-price{
     color: orangered;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 600;
+}
+.currency{
+    text-decoration: underline;
 }
 .quantity{
     display: flex;
     align-items: center;
     gap: 4px;
 }
+.quantity input{
+    border-radius: 5pxs;
+}
 .quantity button{
-    padding: 5px 7px;
+    padding: 5px 12px;
+    border-radius: 5px;
 }
 .quantity span{
     margin-right: 40px;
@@ -120,25 +185,51 @@
 #buy-btn{
     padding: 7px 10px;
     font-size: 1.6em;
-    font-weight: bold;
+    font-weight: 600;
     background-color: #0077B6;
     color: #fff;
     border: 0;
     border-radius: 5px;
 }
 
+/* Footer */
+.footer{
+     display: flex;
+     gap: 5px;
+     padding: 10px 0;
+}
+.terms img{
+    max-width: 30px;
+}
+.footer-content{
+    flex: 1;
+    color: #fff;
+    text-align: left;
+}
+.title{
+    text-align: center;
+    font-weight: 700;
+    color: #00A9FF;
+}
 /* Responsive */
 @media (max-width: 768px){
     .info{
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 55px;
     }
     #buy-btn{
         position: fixed;
-        bottom: 2px;
-        width: 80%;
+        bottom: 0;
+        width: 76%;
     }
     #price{
         align-self: flex-start;
+    }
+    footer{
+        display: none;
+    }
+    .buy{
+        display: flex;
+        justify-content: center;
     }
 }

@@ -5,12 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/detail.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Icon library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/logo/book_farvicon.jpg" type="image/x-icon">
     <title>Description</title>
 </head>
 
-<body>
-    <div class="container">
+<body onload="loadInfo()">
+    <header class="container-fluid">
+        <div class="container header">
+            <div class="logo"><a href="landingpages.html"><img class="logo" src="assets/images/logo/image web.png"
+                        alt="logo"></a></div>
+            <div class="search-bar">
+                <input type="text" class="search-input">
+                <i class='bx bx-search-alt'></i>
+            </div>
+            <div class="userAvt"><img class="profile" src="assets/images/logo/profile.png" alt="username">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
         <button onclick="history.back()" class="back-btn">
             <div class="back">
                 <i class='bx bx-left-arrow-alt'></i>
@@ -38,18 +57,58 @@
             </div>
             <div class="info-right">
                 <span id="name">Sher1</span>
-                <p id="desc">This is the first edition of Sherlock Holmes series which are written by Sir Conan Doyle. Thrilled, Detective, Interesting novel with lot of plot-twist and creative, extraordinary ways of solving crime</p>
-                <span id="price">100,000</span>
+                <p id="desc">This is the first edition of Sherlock Holmes series which are written by Sir Conan Doyle.
+                    Thrilled, Detective, Interesting novel with lot of plot-twist and creative, extraordinary ways of
+                    solving crime</p>
+                <div class="book-price">
+                    <span class="currency">đ</span>
+                    <span id="price"> 100000</span>
+                </div>
                 <div class="quantity">
                     <span>Số lượng</span>
-                    <button id="minus-btn">-</button>
+                    <button id="minus-btn" onclick="minus()">-</button>
                     <input type="text" id="number" value="1">
-                    <button id="add-btn">+</button>
+                    <button id="add-btn" onclick="add()">+</button>
                 </div>
-                <button id="buy-btn">Mua ngay</button>
+                <div class="buy">
+                    <button id="buy-btn" onclick="buy()">Mua ngay</button>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="container footer">
+            <div class="about-us footer-content">
+                <p class="title">About Us</p>
+                <p>Sell the best book for the bright future</p>
+            </div>
+            <div class="privacy-policy footer-content">
+                <p class="title">Privacy Policy</p>
+                <p>Keep customer information in private</p>
+                <p>Refund if the product is not satisfied and quality</p>
+            </div>
+            <div class="terms footer-content">
+                <p class="title">Terms</p>
+                <p>Your order will be in our website, contact with our customer-service, email</p>
+                <p>Payment:</p>
+                <div class="payment-logo footer-content">
+                    <a href="https://www.visa.com.vn/" target="_blank"><img class="payimage"
+                            src="assets/images/payment/visa.jpg" alt="visa"></a>
+                    <a href="https://www.mastercard.com.vn/vi-vn.html" target="_blank"><img class="payimage"
+                            src="assets/images/payment/mastercard.jpg" alt="mastercard"></a>
+                    <a href="https://zalopay.vn/" target="_blank"><img class="payimage"
+                            src="assets/images/payment/zalopay.jpg" alt="zalopay"></a>
+                    <a href="https://momo.vn/" target="_blank"><img class="payimage"
+                            src="assets/images/payment/momo.jpg" alt="momo"></a>
+                </div>
+            </div>
+            <div class="contact-us footer-content">
+                <p class="title">Contact Us</p>
+                <p>Hotline: 0986.787.***</p>
+                <p>Email: SunshineBookstore@gmail.com</p>
+            </div>
+        </div>
+    </footer>
     <script src="./assets/js/detail.js"></script>
 </body>
 
