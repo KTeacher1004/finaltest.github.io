@@ -1,16 +1,24 @@
 {
     "user": [
         {
-            "name": "example@gmail.com",
-            "password": "examplePassword"
+            "name": "randomUser",
+            "password": "aothatday",
+            "avatar": "assets/images/user/user1.jpg"
         },
         {
-            "name": "example2@gmail.com",
-            "password": "examplePassword2"
+            "name": "anotheruser",
+            "password": "hotchick",
+            "avatar": "assets/images/user/user2.jpg"
         },
         {
-            "name": "hiGuys",
-            "password": "mypassword"
+            "name": "keklmao",
+            "password": "swanneednottobathe",
+            "avatar": "assets/images/user/user3.jpg"
+        },
+        {
+            "name": "lastuser",
+            "password": "deptraikhoaitosaumui",
+            "avatar": "assets/images/user/user4.jpg"
         }
     ]
 }

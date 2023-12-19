@@ -12,16 +12,9 @@ submitBtn.addEventListener('click', (e) => {
     fetch('assets/js/user.json').then((res) => {return res.json();}).then((data) => {
         for(let i = 0; i < data.user.length; i++) {
             let a = true;
-            if(data.user[i].name !== userName.value && a) {
-                passwordText.innerHTML = 'Wrong username or password'
-                a = false;
-                console.log(data.user[i].name)
-                continue;
-            }
-            else if(data.user[i].password !== password.value && a) {
-                console.log(data.user[i].password)
-                a = false;
-                passwordText.innerHTML = 'Wrong username or password'
+            if(data.user[i].name !== userName.value || data.user[i].password !== password.value) {
+                passwordText.innerHTML = 'Sai tên đăng nhập hoặc mật khẩu'
+                console.log(data.user[i].name, data.user[i].password)
                 continue;
             }
             else {
