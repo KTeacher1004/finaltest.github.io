@@ -17,6 +17,10 @@ body {
     align-items: center;
 }
 
+body {
+    background-color: #ceffff;
+}
+
 /* Display each link inside the navigation bar */
 .logo{
     flex: 1;
@@ -118,11 +122,9 @@ a:hover {
 }
 
 .book-type {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 15px;
     margin-right: 15px;
-    z-index: 1;
-    background-color: white;
 }
 
 
@@ -161,65 +163,12 @@ a:hover {
     margin-right: 15px;
 }
 
-.book-type h3 {
-    text-align: center;
-}
-.book-type h3 span {
-    position: relative;
-    margin: 0 auto 20px;
-    padding: 10px 40px;
-    text-align: center;
-    background-color: #875e46;
-}
-  
-.book-type h3 span::before,.book-type h3 span::after {
-    content: '';
-    width: 80px;
-    height: 100%;
-    background-color: #724b34;
-  
-    /* position ribbon ends behind and slightly lower */
-    position: absolute;
-    z-index: -1;
-    top: 20px;
-    
-    /* clip ribbon end shape */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
-  
-    /* draw and position the folded ribbon bit */
-    background-image: linear-gradient(45deg, transparent 50%, #5d3922 50%);
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-  
-.book-type h3 span::before {
-    left: -60px;
-}
-  
-.book-type h3 span::after {
-    right: -60px;
-    transform: scaleX(-1); /* flip horizontally */
-}
-  
-  /* everything below is for demo appearances and not important to the concept */
 
 
-.producer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15px;
-    gap: 5%;
-    margin-right: 15px;
-    padding: 0%;
-}
 
-.producer img {
-    height: 80px;
-    border-radius: 15px;
-    flex-grow: 1;
-}
+
+
+
 
 /* Footer */
 .footer{
