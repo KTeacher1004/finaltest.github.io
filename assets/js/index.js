@@ -100,6 +100,7 @@ var list3 = [
     }
 ]
 
+
 function loadBook(list, bookType) {
     for (let i = 0; i < list.length; i++) {
         let box = document.createElement('a');
@@ -144,3 +145,4 @@ function addDot(a) {
     }
     return a = priceTest.split("").reverse().join("");
 }
+
