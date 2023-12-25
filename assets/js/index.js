@@ -86,6 +86,18 @@ var list3 = [
         name: 'penguin',
         link: './assets/images/Producer/penguin.jpg'
     },
+    {
+        name: 'KimDong',
+        link: './assets/images/Producer/KimDong.png'
+    },
+    {
+        name: 'PhuongNam',
+        link: './assets/images/Producer/PhuongNam.png'
+    },
+    {
+        name: 'Fahasa',
+        link: './assets/images/Producer/Fahasa.png'
+    }
 ]
 
 function loadBook(list, bookType) {
@@ -110,10 +122,12 @@ function loadBook(list, bookType) {
 loadBook(list1, detective);
 loadBook(list2, history);
 
-for (let i = 0; i < list3.length; i++) {
-    let pic = document.createElement('img');
-    pic.src = list3[i].link;
-    producer.appendChild(pic);
+for (let j = 0; j < 2; j++) {
+    for (let i = 0; i < list3.length; i++) {
+        let pic = document.createElement('img');
+        pic.src = list3[i].link;
+        producer.appendChild(pic);
+    }
 }
 function addDot(a) {
     let priceTest = "";
