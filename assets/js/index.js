@@ -9,7 +9,6 @@ var list1 = [
         image: './assets/images/Detective/Sher1/main.png',
         price: "150000",
         link: 'detail.html#Sher1',
-        introduction: 'In the shadowy streets of Victorian London, a brilliant detective named Sherlock Holmes and his loyal companion, Dr. John Watson, embark on their first adventure together, plunging headlong into a thrilling mystery that will test their intelligence and courage. '
     },
 
     {
@@ -17,7 +16,6 @@ var list1 = [
         image: './assets/images/Detective/Sher2/main.png',
         price: "150000",
         link: 'detail.html#Sher2',
-        introduction: 'The game is afoot once more as Sherlock Holmes and Dr. Watson return in a thrilling sequel! '
     },
 
     {
@@ -25,7 +23,27 @@ var list1 = [
         image: './assets/images/Detective/Sher3/main.png',
         price: "150000",
         link: 'detail.html#Sher3',
-        introduction: `Shadows deepen, secrets unravel, and a new puzzle awaits the world's greatest detective, Sherlock Holmes, in the highly anticipated third installment of his thrilling adventures. Prepare to be captivated once more as the iconic duo of Holmes and Watson delve into a web of intrigue that will challenge their minds and test their unwavering loyalty to justice.`
+    },
+
+    {
+        name: 'Con chim khát tổ',
+        image: './assets/images/Detective/Con chim khat to/main.jpg',
+        price: "170000",
+        link: 'detail.html#conchimkhatto',
+    },
+
+    {
+        name: 'Con chó săn nhà Baskerville',
+        image: './assets/images/Detective/Con chó săn nhà Baskerville/main.jpg',
+        price: "60000",
+        link: 'detail.html#Hound',
+    },
+
+    {
+        name: 'Mật mã Da Vinci',
+        image: './assets/images/Detective/Mật mã Da Vinci/main.jpg',
+        price: "160000",
+        link: 'detail.html#DaVinci',
     }
 ]
 
@@ -35,7 +53,6 @@ var list2 = [
         image: './assets/images/History book/heart berries/heart berries.png',
         price: "120000",
         link: 'detail.html#heart',
-        introduction: `Prepare to embark on a poignant and powerful journey through love, loss, and resilience as you delve into the award-winning memoir "Heart Berries," where Terese Marie Mailhot paints a captivating portrait of her life as a First Nations woman navigating the complexities of family, self-discovery, and the enduring spirit of her people.`
     },
 
     {
@@ -43,16 +60,34 @@ var list2 = [
         image: './assets/images/History book/steel/Steel.png',
         price: "150000",
         link: 'detail.html#steel',
-        introduction: `
-        In the turbulent times of the Russian Civil War and the rise of the Soviet Union, witness the captivating story of Pavel Korchagin, a young man whose trials and tribulations forge him into a true hero.`
     },
-
+    
     {
         name: 'Liar club',
         image: './assets/images/History book/the liars club/the liars club.png',
         price: "120000",
-        link: 'detail.html#liars',
-        introduction: `n Mary Karr's captivating memoir, "The Liars' Club," we embark on a poignant journey through the author's childhood in a small, oil-boom town in Southeast Texas. Through vivid storytelling and insightful reflection, Karr explores themes of family dynamics, societal expectations, and the complex relationship between truth and fiction in the formative years.`
+        link: 'detail.html#liar',
+    },
+
+    {
+        name: 'Elon Musk',
+        image: './assets/images/History book/Elon Musk/main.jpg',
+        price: "200000",
+        link: 'detail.html#ElonMusk',
+    },
+
+    {
+        name: 'The history book',
+        image: './assets/images/History book/the history book/main.jpg',
+        price: "90000",
+        link: 'detail.html#Thehistory',
+    },
+
+    {
+        name: 'Midnight in Chernobyl',
+        image: './assets/images/History book/midnight/main.jpg',
+        price: "130000",
+        link: 'detail.html#Midnight',
     },
 ]
 
@@ -111,7 +146,7 @@ function loadBook(list, bookType) {
         making.src = list[i].image;
         let cost = document.createElement('strong')
         cost.innerText = addDot((`${list[i].price}`)) + "đ";
-    
+
         box.appendChild(making);
         box.appendChild(heading);
         box.appendChild(cost);
@@ -119,28 +154,55 @@ function loadBook(list, bookType) {
     }
 }
 
-loadBook(list1, detective);
-loadBook(list2, history);
+list3.map(item => {
+    let template =
+        `<div class="swiper-slide">
+        <img src=${item.link} />
+    </div>`
 
-for (let j = 0; j < 2; j++) {
-    for (let i = 0; i < list3.length; i++) {
-        let pic = document.createElement('img');
-        pic.src = list3[i].link;
-        producer.appendChild(pic);
+    producer.innerHTML += template
+})
+
+var swiper = new Swiper(".mySwiper", {
+    autoplay: {
+        delay: 1000,
+    },
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 40
+        },
+        1000: {
+            slidesPerView: 8,
+            spaceBetween: 30
+        }
     }
-}
+});
+
 function addDot(a) {
     let priceTest = "";
     let count = 0;
     for (let i = a.length - 1; i >= 0; i--) {
-        priceTest+=a[i];
+        priceTest += a[i];
         count++
-        if (count==a.length) {
+        if (count == a.length) {
             break;
         }
         else if (count % 3 == 0) {
-            priceTest+= ".";
+            priceTest += ".";
         }
     }
     return a = priceTest.split("").reverse().join("");
 }
+
+loadBook(list1, detective);
+loadBook(list2, history);
