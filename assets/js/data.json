@@ -1,0 +1,72 @@
+{
+ "books":[   
+    {"key": "#Sher1",
+    "name": "Sherlock holmes 1",
+    "author":"Arthur Conan Doyle",
+    "translator": "Quang Loc",
+    "desc": "This is the first edition of Sherlock Holmes series which are written by Sir Conan Doyle. Thrilled, Detective, Interesting novel with lot of plot-twist and creative, extraordinary ways of solving crime",
+    "price": 150000,
+    "link": "detail.html#Sher1",
+    "listBookImg": ["./assets/images/Detective/Sher1/main.png", "./assets/images/Detective/Sher1/side image 1.png", "./assets/images/Detective/Sher1/side image 2.png", "./assets/images/Detective/Sher1/side image 3.png"]
+    },
+
+    {
+        "key": "#Sher2",
+        "name": "Sherlock holmes 2",
+        "author":"Arthur Conan Doyle",
+        "translator": "Huu Quan",
+        "desc": "This is the second edition of Sherlock Holmes series after the previous Sherlock Holmes 1. We are going to immerse into a Sherlock Holmes world with a lot of bizzare adventure with Sherlock Holmes and his fellow friend, Dr Watson. This adventure is going to break your mind a lot.",
+        "price": 150000,
+        "link": "detail.html#Sher2",
+        "listBookImg": ["./assets/images/Detective/Sher2/main.png", "./assets/images/Detective/Sher2/side image 1.png", "./assets/images/Detective/Sher2/side image 2.png", "./assets/images/Detective/Sher2/side image 3.png"]
+    },
+    {
+        "key": "#Sher3",
+        "name": "Sherlock holmes 3",
+        "author":"Arthur Conan Doyle",
+        "translator": "Hoang Khiem",
+        "desc": "This is the third and last edition of Sherlock Holmes series after the previous Sherlock Holmes 1. More bizzare, More excitement, More crime, More action. That is the slogan of this edition",
+        "price": 150000,
+        "link": "detail.html#Sher3",
+        "listBookImg": ["./assets/images/Detective/Sher3/main.png", "./assets/images/Detective/Sher3/side image 1.png", "./assets/images/Detective/Sher3/side image 2.png", "./assets/images/Detective/Sher3/side image 3.png"]
+    },
+
+    {
+        "key": "#DaVinci",
+        "name": "Mật mã Da Vinci",
+        "author":"Dan Brown",
+        "translator": "Dương Tường",
+        "desc": "The race to uncover the oldest secret has begun . . . An eniment man is brutally murdered in the world most famous museum. Around his body are a ring of codes, hastily drawn in blood. He died to protect a long-kept secret which Professor Robert Langdon must now uncover. It will be a race against time to decipher this final message. Can he get there before the killers do?",
+        "price": 160000,
+        "link": "detail.html#DaVinci",
+        "listBookImg": ["./assets/images/Detective/Mật mã Da Vinci/main.jpg", "./assets/images/Detective/Mật mã Da Vinci/side image 1.jpg", "./assets/images/Detective/Mật mã Da Vinci/side image 2.jpg", "./assets/images/Detective/Mật mã Da Vinci/side image 3.jpg"]
+    },
+
+    {
+        "key": "#bird",
+        "name": "The Cuckoo's Calling",
+        "author":"J.K Rowling",
+        "translator": "Hoang Khiem",
+        "desc": "Sophisticated, captivating mystery nest takes place in the midst of London's quintessential space - from the deep and luxurious streets to the pubs hidden in deep alleys and the vibrant trendy downtown area... The Thirsty Bird promises its nest. The exciting debut of detective Cormoran Strike, and the highly acclaimed first detective novel by Robert Galbraith, a pseudonym for writer J.K. Rowling.",
+        "price": 150000,
+        "link": "detail.html#bird",
+        "listBookImg": ["./assets/images/Detective/Cuckoo/image/con-chim-khat-to.jpg", "./assets/images/Detective/Cuckoo/image/side image 1.jpg", "./assets/images/Detective/Cuckoo/image/side image 2.jpg", "./assets/images/Detective/Cuckoo/image/side image 3.jpg"]
+    },
+
+    {
+        "key": "#house",
+        "name": "The hound of the baskervilles",
+        "author":"Arthur Conan Doyle",
+        "translator": "Hoang Khiem",
+        "desc": "This adventure concerns the mysterious death of Sir Charles Baskerville, and the possibility that the heir to his fortune might be the object of murder. Before the novel begins, Sir Charles Baskerville had died suddenly, perhaps the victim of a ghostly hound believed to haunt his family because of an age-old curse. The Baskerville estate is located out in the remote moor of Devonshire.",
+        "price": 150000,
+        "link": "detail.html#house",
+        "listBookImg": ["./assets/images/Detective/house/image/main.jpg", "./assets/images/Detective/house/image/side image.jpg", "./assets/images/Detective/Cuckoo/image/side image 2.jpg","./assets/images/Detective/house/image/side image 3.jpg"]
+    }
+]
+}
+
+
+
+
+

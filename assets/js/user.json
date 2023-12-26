@@ -1,0 +1,24 @@
+{
+    "user": [
+        {
+            "name": "randomUser",
+            "password": "aothatday",
+            "avatar": "assets/images/user/user1.jpg"
+        },
+        {
+            "name": "anotheruser",
+            "password": "hotchick",
+            "avatar": "assets/images/user/user2.jpg"
+        },
+        {
+            "name": "keklmao",
+            "password": "swanneednottobathe",
+            "avatar": "assets/images/user/user3.jpg"
+        },
+        {
+            "name": "lastuser",
+            "password": "deptraikhoaitosaumui",
+            "avatar": "assets/images/user/user4.jpg"
+        }
+    ]
+}
