@@ -35,6 +35,4 @@ submitBtn.addEventListener('click', (e) => {
         incorrect.innerHTML = ''
         window.location.href = '/index.html'
     }
-    console.log(password.value, passwordVerify.value)
-    console.log(regexLowercase.test(password.value), regexUppercase.test(passwordVerify.value))
 })

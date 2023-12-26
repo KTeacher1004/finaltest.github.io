@@ -4,7 +4,6 @@ const password = document.querySelector('#password');
 const submitBtn = document.querySelector('#submit-btn')
 const passwordText = document.querySelector('#incorrect-password')
 
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 })
@@ -14,11 +13,12 @@ submitBtn.addEventListener('click', (e) => {
             let a = true;
             if(data.user[i].name !== userName.value || data.user[i].password !== password.value) {
                 passwordText.innerHTML = 'Sai tên đăng nhập hoặc mật khẩu'
-                console.log(data.user[i].name, data.user[i].password)
+                console.log(data.user[i].name, data.user[i].password);
                 continue;
             }
             else {
-                passwordText.innerHTML = ''
+                passwordText.innerHTML = '';
+                localStorage.setItem('user', JSON.stringify(data.user[i]))
                 window.location.href = '/index.html'
                 break;
             }
