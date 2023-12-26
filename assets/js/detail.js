@@ -3,7 +3,7 @@ let listBook = [
     {
         key: "#heart",
         name: "Heart berries",
-        author:"Terese Marie Mailhot",
+        author: "Terese Marie Mailhot",
         translator: "Hoàng Khiêm",
         desc: "The debut book from the  Terese Marie, a Canadian writer. Writer is going to witness Mailhot and her complicated childhood and tumultuous motherhood. We are going to witness all of Maillot mental health and identity",
         price: 120000,
@@ -21,7 +21,7 @@ let listBook = [
     {
         key: "#liar",
         name: "Liar club",
-        author:"Mary Karr",
+        author: "Mary Karr",
         translator: "Hữu Quân",
         desc: "The book written by Mary Karr. The story tell her childhood in 1960s in a small industrial town in Texas.Her town is the place where alcohol abuse and phychological problems are common issues",
         price: 120000,
@@ -30,7 +30,7 @@ let listBook = [
     {
         key: "#Sher1",
         name: "Sherlock holmes 1",
-        author:"Arthur Conan Doyle",
+        author: "Arthur Conan Doyle",
         translator: "Quang Lộc",
         desc: "This is the first edition of Sherlock Holmes series which are written by Sir Conan Doyle. Thrilled, Detective, Interesting novel with lot of plot-twist and creative, extraordinary ways of solving crime",
         price: 150000,
@@ -39,7 +39,7 @@ let listBook = [
     {
         key: "#Sher2",
         name: "Sherlock holmes 2",
-        author:"Arthur Conan Doyle",
+        author: "Arthur Conan Doyle",
         translator: "Hữu Quân",
         desc: "This is the second edition of Sherlock Holmes series after the previous Sherlock Holmes 1. We are going to immerse into a Sherlock Holmes world with a lot of bizzare adventure with Sherlock Holmes and his fellow friend, Dr Watson. This adventure is going to break your mind a lot.",
         price: 150000,
@@ -48,7 +48,7 @@ let listBook = [
     {
         key: "#Sher3",
         name: "Sherlock holmes 3",
-        author:"Arthur Conan Doyle",
+        author: "Arthur Conan Doyle",
         translator: "Hoàng Khiêm",
         desc: "This is the third and last edition of Sherlock Holmes series after the previous Sherlock Holmes 1. More bizzare, More excitement, More crime, More action. That is the slogan of this edition",
         price: 150000,
@@ -57,7 +57,7 @@ let listBook = [
     {
         key: "#ElonMusk",
         name: "Elon Musk",
-        author:"Walter Isaacson",
+        author: "Walter Isaacson",
         translator: "Nhiều dịch giả",
         desc: "From the author of Steve Jobs and other bestselling biographies, this is the astonishingly intimate story of the most fascinating and controversial innovator of our era—a rule-breaking visionary who helped to lead the world into the era of electric vehicles, private space exploration, and artificial intelligence. Oh, and took over Twitter.",
         price: 200000,
@@ -66,7 +66,7 @@ let listBook = [
     {
         key: "#conchimkhatto",
         name: "Con chim khát tổ",
-        author:"JK Rowling",
+        author: "JK Rowling",
         translator: "Hồ Thị Như Mai",
         desc: "Khi cô người mẫu xinh đẹp nhiều tai tiếng ngã chết từ ban công căn hộ sang trọng của cô, mọi người, kể cả giới cảnh sát đều cho rằng đây là một vụ tự tử. Chỉ riêng người anh trai cô lặng lẽ ôm mối nghi ngờ tìm đến thám tử tư Cormoran Strike yêu cầu điều tra thêm. Chàng thám tử Strike phong trần gai góc vốn là cựu quân nhân. Chiến tranh đã để lại trong anh vết thương thể xác lẫn tinh thần. Vụ điều tra này giúp anh nhẹ bớt gánh nặng tài chính hiện tại, nhưng cái giá phải trả là anh phải dấn ngày càng sâu vào thế giới phức tạp của cô người mẫu, nơi những điều đen tối dần hé lộ và mối nguy hiểm rình rập anh ngày càng lớn dần...",
         price: 170000,
@@ -75,7 +75,7 @@ let listBook = [
     {
         key: "#Hound",
         name: "Con chó săn nhà Baskerville",
-        author:"Conan Doyle",
+        author: "Conan Doyle",
         translator: "Thiếu Khanh",
         desc: "This adventure concerns the mysterious death of Sir Charles Baskerville, and the possibility that the heir to his fortune might be the object of murder. Before the novel begins, Sir Charles Baskerville had died suddenly, perhaps the victim of a ghostly hound believed to haunt his family because of an age-old curse. The Baskerville estate is located out in the remote moor of Devonshire.",
         price: 60000,
@@ -84,7 +84,7 @@ let listBook = [
     {
         key: "#DaVinci",
         name: "Mật mã Da Vinci",
-        author:"Dan Brown",
+        author: "Dan Brown",
         translator: "Dương Tường",
         desc: "The race to uncover the oldest secret has begun . . . \nAn eminent man is brutally murdered in the world’s most famous museum. Around his body are a ring of codes, hastily drawn in blood. He died to protect a long-kept secret which Professor Robert Langdon must now uncover. It will be a race against time to decipher this final message. Can he get there before the killers do?",
         price: 160000,
@@ -93,7 +93,7 @@ let listBook = [
     {
         key: "#Thehistory",
         name: "The history book",
-        author:"DK",
+        author: "DK",
         translator: "Lê Thị Oanh",
         desc: "Part of the fascinating Big Ideas series, this book tackles tricky topics and themes in a simple and easy to follow format. Learn about History in this overview guide to the subject, great for novices looking to find out more and experts wishing to refresh their knowledge alike! The History Book brings a fresh and vibrant take on the topic through eye-catching graphics and diagrams to immerse yourself in.",
         price: 90000,
@@ -102,7 +102,7 @@ let listBook = [
     {
         key: "#Midnight",
         name: "Midnight in Chernobyl",
-        author:"Adam Higginbotham",
+        author: "Adam Higginbotham",
         translator: "Hoàng Khiêm",
         desc: "This book written by Adam Higginbotham show us some unspoken stories behind the nuclear incidents in Soviet Ukraine in 1986 which had caused much of damage to the citizen and the environment. Addition, it show us more about the destruction that nuclear would bring to people which was so horrible. Maybe you can look for yourself in this book to know more and understand more about nuclear in this book.",
         price: 130000,
@@ -119,8 +119,32 @@ let currentImgIndex = 0;
 let number = document.getElementById("number");
 let numValue = number.value;
 
-let locationBook = window.location.hash;
-let bookDetail = listBook.find(item => item.key === locationBook);
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(listBook => {
+        let locationBook = window.location.hash;
+        let bookDetail = listBook.books.find(item => item.key === locationBook);
+        console.log(bookDetail, locationBook);
+
+
+        let bookName = document.getElementById("name");
+        let desc = document.getElementById("desc");
+        let price = document.getElementById("price");
+        let author = document.getElementById("author");
+        let translator = document.getElementById("translator");
+        bookName.innerText = bookDetail.name;
+        desc.innerText = bookDetail.desc;
+        author.innerText += " " + bookDetail.author;
+        translator.innerText += " " + bookDetail.translator;
+        price.innerText = addDot(bookDetail.price.toString());
+        for (let i = 0; i < listImg.length; i++) {
+            listImg[i].src = bookDetail.listBookImg[i];
+        }
+        updateMainImg(0)
+    })
+    .catch(error => console.error('Lỗi khi tải file data.json:', error));
+
 
 // change current img
 function updateMainImg(index) {
@@ -182,35 +206,52 @@ let buy = () => {
     alert("Bạn đã mua thành công! Số tiền cần trả là: " + addDot((numValue * bookDetail.price).toString()) + "đ");
 }
 
-
-function loadInfo() {
-    let bookName = document.getElementById("name");
-    let desc = document.getElementById("desc");
-    let price = document.getElementById("price");
-    let author = document.getElementById("author");
-    let translator = document.getElementById("translator");
-    bookName.innerText = bookDetail.name;
-    desc.innerText = bookDetail.desc;
-    author.innerText += " " +  bookDetail.author;
-    translator.innerText += " " + bookDetail.translator;
-    price.innerText = addDot(bookDetail.price.toString());
-    for (let i = 0; i < listImg.length; i++) {
-        listImg[i].src = bookDetail.listBookImg[i];
-    }
-    updateMainImg(0)
-}
 function addDot(a) {
     let priceTest = "";
     let count = 0;
     for (let i = a.length - 1; i >= 0; i--) {
-        priceTest+=a[i];
+        priceTest += a[i];
         count++
-        if (count==a.length) {
+        if (count == a.length) {
             break;
         }
         else if (count % 3 == 0) {
-            priceTest+= ".";
+            priceTest += ".";
         }
     }
     return a = priceTest.split("").reverse().join("");
 }
+
+// function getData() {
+//     // Create a new xmlhttp-request object
+//     let http = new XMLHttpRequest();
+
+//     http.open("get", "data.json", true);
+//     http.send();
+
+//     // Catch response
+//     http.onload = function () {
+//         if (this.readyState == 4 && this.status == 200) {
+//             let book = JSON.parse(this.responseText);
+//             console.log(book);
+
+
+
+//             let bookName = document.getElementById("name");
+//             let desc = document.getElementById("desc");
+//             let price = document.getElementById("price");
+//             let author = document.getElementById("author");
+//             let translator = document.getElementById("translator");
+
+//             bookName.innerText = bookDetail.name;
+//             desc.innerText = bookDetail.desc;
+//             author.innerText += " " + bookDetail.author;
+//             translator.innerText += " " + bookDetail.translator;
+//             price.innerText = addDot(bookDetail.price.toString());
+//             for (let i = 0; i < listImg.length; i++) {
+//                 listImg[i].src = bookDetail.listBookImg[i];
+//             }
+//             updateMainImg(0)
+//         }
+//     }
+// }
