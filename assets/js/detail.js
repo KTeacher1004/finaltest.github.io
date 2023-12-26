@@ -22,7 +22,7 @@ if (currentUser) {
     userAva.classList.add('hide');
 }
 
-fetch('data.json')
+fetch('listData.json')
     .then(response => response.json())
     .then(listBook => {
         let locationBook = window.location.hash;
@@ -120,4 +120,9 @@ function addDot(a) {
         }
     }
     return a = priceTest.split("").reverse().join("");
+}
+
+function logOut() {
+    localStorage.removeItem('user');
+    window.location.reload();
 }

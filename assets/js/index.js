@@ -3,6 +3,7 @@ const history = document.querySelector('.history-book');
 const producer = document.querySelector('.producer');
 const controlLogin = document.getElementById('control-login');
 const userAva = document.getElementById('user-avt');
+const btnLogout = document.getElementById('btn-logout');
 
 var list3 = [
     {
@@ -52,9 +53,11 @@ let currentUser = localStorage.getItem('user') || null;
 if (currentUser) {
     controlLogin.classList.add('hide');
     userAva.classList.add('show');
+    btnLogout.classList.add('show');
 } else {
     controlLogin.classList.add('show');
     userAva.classList.add('hide');
+    btnLogout.classList.add('hide');
 }
 
 function loadBook(list, bookType) {
@@ -163,4 +166,9 @@ function addDot(a) {
         }
     }
     return a = priceTest.split("").reverse().join("");
+}
+
+function logOut() {
+    localStorage.removeItem('user');
+    window.location.reload();
 }
