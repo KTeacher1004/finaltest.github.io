@@ -1,95 +1,8 @@
 const detective = document.querySelector('.detective-book');
 const history = document.querySelector('.history-book');
 const producer = document.querySelector('.producer');
-
-
-var list1 = [
-    {
-        name: 'Sherlock holmes 1',
-        image: './assets/images/Detective/Sher1/main.png',
-        price: "150000",
-        link: 'detail.html#Sher1',
-    },
-
-    {
-        name: 'Sherlock holmes 2',
-        image: './assets/images/Detective/Sher2/main.png',
-        price: "150000",
-        link: 'detail.html#Sher2',
-    },
-
-    {
-        name: 'Sherlock holmes 3',
-        image: './assets/images/Detective/Sher3/main.png',
-        price: "150000",
-        link: 'detail.html#Sher3',
-    },
-
-    {
-        name: 'Con chim khát tổ',
-        image: './assets/images/Detective/Con chim khat to/main.jpg',
-        price: "170000",
-        link: 'detail.html#conchimkhatto',
-    },
-
-    {
-        name: 'Con chó săn nhà Baskerville',
-        image: './assets/images/Detective/Con chó săn nhà Baskerville/main.jpg',
-        price: "60000",
-        link: 'detail.html#Hound',
-    },
-
-    {
-        name: 'Mật mã Da Vinci',
-        image: './assets/images/Detective/Mật mã Da Vinci/main.jpg',
-        price: "160000",
-        link: 'detail.html#DaVinci',
-    }
-]
-
-var list2 = [
-    {
-        name: 'Heart Berries',
-        image: './assets/images/History book/heart berries/heart berries.png',
-        price: "120000",
-        link: 'detail.html#heart',
-    },
-
-    {
-        name: 'Steel',
-        image: './assets/images/History book/steel/Steel.png',
-        price: "150000",
-        link: 'detail.html#steel',
-    },
-    
-    {
-        name: 'Liar club',
-        image: './assets/images/History book/the liars club/the liars club.png',
-        price: "120000",
-        link: 'detail.html#liar',
-    },
-
-    {
-        name: 'Elon Musk',
-        image: './assets/images/History book/Elon Musk/main.jpg',
-        price: "200000",
-        link: 'detail.html#ElonMusk',
-    },
-
-    {
-        name: 'The history book',
-        image: './assets/images/History book/the history book/main.jpg',
-        price: "90000",
-        link: 'detail.html#Thehistory',
-    },
-
-    {
-        name: 'Midnight in Chernobyl',
-        image: './assets/images/History book/midnight/main.jpg',
-        price: "130000",
-        link: 'detail.html#Midnight',
-    },
-]
+const controlLogin = document.getElementById('control-login');
+const userAva = document.getElementById('user-avt');
 
 var list3 = [
     {
@@ -134,6 +47,15 @@ var list3 = [
         link: './assets/images/Producer/Fahasa.png'
     }
 ]
+
+let currentUser = localStorage.getItem('user') || null;
+if (currentUser) {
+    controlLogin.classList.add('hide');
+    userAva.classList.add('show');
+} else {
+    controlLogin.classList.add('show');
+    userAva.classList.add('hide');
+}
 
 function loadBook(list, bookType) {
     for (let i = 0; i < list.length; i++) {
@@ -188,6 +110,45 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+fetch('assets/js/data.json')
+    .then(response => response.json())
+    .then(data => {
+        for (let i = 0; i < data.detectiveBook.length; i++) {
+            let box = document.createElement('a');
+            box.classList.add('bookcontainer');
+            box.href = data.detectiveBook[i].link;
+            let heading = document.createElement('h4');
+            heading.innerText = data.detectiveBook[i].name;
+            let making = document.createElement('img');
+            making.src = data.detectiveBook[i].listBookImg[0];
+            let cost = document.createElement('strong')
+            cost.innerText = addDot((`${data.detectiveBook[i].price}`)) + "đ";
+
+            box.appendChild(making);
+            box.appendChild(heading);
+            box.appendChild(cost);
+            detective.appendChild(box);
+        }
+
+        for (let i = 0; i < data.historyBook.length; i++) {
+            let box = document.createElement('a');
+            box.classList.add('bookcontainer');
+            box.href = data.historyBook[i].link;
+            let heading = document.createElement('h4');
+            heading.innerText = data.historyBook[i].name;
+            let making = document.createElement('img');
+            making.src = data.historyBook[i].listBookImg[0];
+            let cost = document.createElement('strong')
+            cost.innerText = addDot((`${data.historyBook[i].price}`)) + "đ";
+
+            box.appendChild(making);
+            box.appendChild(heading);
+            box.appendChild(cost);
+            history.appendChild(box);
+        }
+    })
+    .catch (error => console.error('Lỗi khi tải file data.json:', error));
+
 function addDot(a) {
     let priceTest = "";
     let count = 0;
@@ -203,6 +164,3 @@ function addDot(a) {
     }
     return a = priceTest.split("").reverse().join("");
 }
-
-loadBook(list1, detective);
-loadBook(list2, history);

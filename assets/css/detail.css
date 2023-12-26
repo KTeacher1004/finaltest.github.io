@@ -8,6 +8,14 @@ body{
     background-image: linear-gradient(135deg, #63d5f885, #f7258540);
 }
 
+.show {
+    display: inline-block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
 input {
     outline: none;
 }
@@ -15,8 +23,8 @@ input:focus {
     outline: none;
 }
 
-.container-fluid{
-    background-color: #89CFF3;
+.container-fluid {
+    background-color: #4CC9F0;
     padding: 10px 0;
 }
 .header {
@@ -25,9 +33,17 @@ input:focus {
 }
 
 /* Display each link inside the navigation bar */
-.logo{
+.logo a{
+    font-size: 25px;
+    color: #fff000;
+    margin-right: 8px;
+}
+.logo img {
     flex: 1;
     border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    margin-right: 8px;
 }
 .search-bar{
     flex: 2;
@@ -49,8 +65,8 @@ input:focus {
     cursor: pointer;
 }
 .userAvt {
-    flex: 1;
-    text-align: right;
+    /* flex: 1; */
+    margin-left: 10px;
 }
 
 .profile {
@@ -60,9 +76,10 @@ input:focus {
 }
 
 .nav{
-    flex: 1;
     margin-left: 20px;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .cart{
@@ -70,6 +87,8 @@ input:focus {
     align-items: center;
     font-size: 35px;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
     padding: 5px;
     border: solid 2px #8a8a8a;
 }
@@ -82,15 +101,23 @@ input:focus {
     gap: 5px;
 }
 
+.login {
+    margin-left: 10px;
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    gap: 5px;
+}
+
 /* Bookstore logo inside the navigation bar*/
-.logo {
+/* .logo {
     height: 80px;
     width: 80px;
-}
+} */
 
 /* Clear the text decoration of each link */
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #000000; 
 }
 
@@ -244,23 +271,31 @@ a:hover {
 }
 
 /* Footer */
-.footer{
-     display: flex;
-     gap: 5px;
-     padding: 10px 0;
+.footer {
+    display: flex;
+    gap: 7px;
+    padding: 10px 0;
 }
-.terms img{
+
+.terms img {
     max-width: 30px;
 }
-.footer-content{
+
+.footer-content {
     flex: 1;
     color: #fff;
     text-align: left;
 }
-.title{
+
+.title {
     text-align: left;
     font-weight: 700;
-    color: #00A9FF;
+    color: #3F37C9;
+}
+
+.map {
+    width: 300px;
+    height: 200px;
 }
 /* Responsive */
 @media (min-width: 768px) and (max-width: 992px){

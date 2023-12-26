@@ -9,6 +9,14 @@ body {
     background-image: linear-gradient(135deg, #4cc9f085, #f7258540);
 }
 
+.show {
+    display: inline-block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
 .container-fluid {
     background-color: #4CC9F0;
     padding: 10px 0;
@@ -20,11 +28,17 @@ body {
 }
 
 /* Bookstore logo inside the navigation bar*/
-.logo {
+.logo a {
+    font-size: 25px;
+    color: #fff000;
+    margin-right: 8px;
+}
+.logo img {
     flex: 1;
     border-radius: 10px;
     height: 80px;
     width: 80px;
+    margin-right: 8px;
 }
 
 .search-bar {
@@ -50,8 +64,8 @@ body {
 }
 
 .userAvt {
-    flex: 1;
-    text-align: right;
+    /* flex: 1; */
+    margin-left: 10px;
 }
 
 .profile {
@@ -64,10 +78,10 @@ body {
 }
 
 .nav {
-    flex: 1;
     margin-left: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .cart {
@@ -75,6 +89,8 @@ body {
     align-items: center;
     font-size: 35px;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
     padding: 5px;
     border: solid 2px #8a8a8a;
 }
