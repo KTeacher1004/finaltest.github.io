@@ -10,7 +10,7 @@ body {
 }
 
 .show {
-    display: inline-block !important;
+    display: inherit !important;
 }
 
 .hide {
@@ -65,7 +65,7 @@ body {
 
 .userAvt {
     /* flex: 1; */
-    margin-left: 10px;
+    margin:0 10px;
 }
 
 .profile {
