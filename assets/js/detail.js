@@ -4,6 +4,7 @@ let mainImg = document.querySelector("#main-img");
 let listImg = document.querySelectorAll(".list-img img");
 let prevBtn = document.getElementsByClassName("prev")[0];
 let nextBtn = document.getElementsByClassName("next")[0];
+const btnLogout = document.getElementById('btn-logout');
 let currentImgIndex = 0;
 // quantity variable
 let number = document.getElementById("number");
@@ -17,9 +18,11 @@ let currentUser = localStorage.getItem('user') || null;
 if (currentUser) {
     controlLogin.classList.add('hide');
     userAva.classList.add('show');
+    btnLogout.classList.add('show');
 } else {
     controlLogin.classList.add('show');
     userAva.classList.add('hide');
+    btnLogout.classList.add('hide');
 }
 
 fetch('listData.json')

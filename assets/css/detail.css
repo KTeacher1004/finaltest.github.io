@@ -9,7 +9,7 @@ body{
 }
 
 .show {
-    display: inline-block !important;
+    display: inherit !important;
 }
 
 .hide {
