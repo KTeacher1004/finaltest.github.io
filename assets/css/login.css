@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: url(/assets/images/background/background-login.png);
+    background: url(../images/background/background-login.png);
 }
 .login {
     width: 400px;
@@ -59,7 +59,6 @@ form>button:hover {
 }
 a {
     color: rgb(65, 182, 255);
-    /*chon mau cho bg va cai nay sau*/
 }
 #incorrect-password {
     color: red;
